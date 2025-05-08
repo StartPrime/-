@@ -1,0 +1,64 @@
+.section {
+	width: 20vw;
+	background-color: gold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	a {
+		font-size: 24px;
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+		position: relative;
+		padding-bottom: 5px;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: #555;
+		}
+
+		&.activeLink {
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: black;
+				animation: underline 0.3s ease;
+			}
+		}
+	}
+}
+
+.banners {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	p {
+		width: 100%;
+		text-align: center;
+		background-color: deepskyblue;
+		padding: 12px 0;
+		border-radius: 10px;
+	}
+}
+
+@keyframes underline {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}

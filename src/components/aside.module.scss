@@ -1,0 +1,34 @@
+.aside {
+	background-color: darkturquoise;
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.tags {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+
+	p {
+		background-color: aqua;
+		padding: 4px 8px;
+		border-radius: 20px;
+	}
+}
+
+.banners {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	p {
+		width: 100%;
+		text-align: center;
+		background-color: aqua;
+		padding: 12px 0;
+		border-radius: 10px;
+	}
+}
