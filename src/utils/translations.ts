@@ -36,6 +36,9 @@ export const translations = {
 			text: '2024 Педагог. Контакт: +7 908 517 50 43',
 		},
 		error: 'Вы ошиблись адресом!',
+		buttons: {
+			downloadTxt: 'Скачать новость (TXT)',
+		},
 	},
 	en: {
 		navigation: {
@@ -74,5 +77,8 @@ export const translations = {
 			text: '2024 Teacher. Contact: +7 908 517 50 43',
 		},
 		error: "You've got the wrong address!",
+		buttons: {
+			downloadTxt: 'Download news (TXT)',
+		},
 	},
 }
